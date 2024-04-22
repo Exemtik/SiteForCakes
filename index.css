@@ -1,0 +1,266 @@
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+body{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#first-section {
+    background: url('./images/confectionery.jpg');
+    background-size: cover;
+    height:  100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 64px;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+
+#slogan{
+    background-image: radial-gradient(circle at center,rgb(8, 30, 51) 0%,rgba(176,201,224,0) 100%);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cakes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "c2 c3 c1"
+      "c4 c5 c1";
+    width: 80%;
+    margin: 0 auto;
+    gap: 18px;
+}
+
+.cake1{
+    grid-area: c1;
+}
+
+.cake2{
+    grid-area: c2;
+}
+
+.cake3{
+    grid-area: c3;
+}
+
+.cake4{
+    grid-area: c4;
+}
+
+.cake5{
+    grid-area: c5;
+}
+
+.cake{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 24px;
+}
+
+.cake img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: transparent 2px solid;
+}
+
+.cake:hover img{
+    border: #ff4d6b 2px solid;
+}
+
+#tabs{
+    display: flex;
+    gap: 36px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+    position: relative;
+    
+}
+
+#tabs::before{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    background: black;
+    height: 2px;
+}
+
+#tab-underline{
+    position: absolute;
+    bottom: -12px;
+    width: 100px;
+    left: 0;
+    background: #ff4d6b;
+    height: 6px;
+    transition: transform 0.5s;
+    transform-origin: left top;
+}
+
+.tab{
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  cursor: pointer;
+}
+
+#second-section{
+    margin-top: 64px;
+}
+
+#advantages{
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+}
+
+footer{
+    text-align: center;
+    font-size: 48px;
+    margin-top: 72px;
+    margin: 72px 0;
+}
+
+.advantage{
+    text-align: center;
+    font-size: 32px;
+}
+
+.advantage img{
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 24px;
+    margin-top: 48px;
+}
+
+#cakepage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 52px;
+    padding-top: 64px;
+}
+
+#cakepage img{
+    width: 540px;
+    height: 820px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+#cakepage section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    margin-right: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .name{
+    font-weight: 700;
+}
+
+.description{
+    flex: 1;
+    font-size: 32px;
+    padding-top: 180px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+#cakepage .slogan{
+    font-size: 16px;
+    letter-spacing: 12px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.order{
+    padding: 16px 36px;
+    font-size: 24px;
+    color: #ffffff;
+    background: #000000;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.total{
+    font-size: 32px;
+    background: #000000;
+    color: #ffffff;
+    padding: 64px;
+    text-align: center;
+}
+
+.checkout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 64px;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    gap:  8px;
+    width: 520px;
+    font-size: 16px;
+    position: relative;
+}
+
+.card_information{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "a a"
+      "b c";
+}
+
+.card_information #number{
+    grid-area: a;
+}
+
+.card_information #date{
+    grid-area: b;
+}
+
+.card_information #cvc{
+    grid-area: c;
+}
+
+.checkout input{
+    font-size: 24px;
+    width: 100%;
+    padding: 6px 14px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <!-- <link rel="icon" type="image/x-icon" href="./logo.svg"> -->
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body id="payment">
+    <div class="total">
+        <p>your order</p>
+    </div>
+    <div class="checkout">
+        <div class="field">
+            <label htmlFor="inputemail">
+                email
+            </label>
+            <input id="inputemail" placeholder="example@gmail.com" type="email" required/>
+        </div>
+        <div class="field">
+            <label>
+                card information
+            </label>
+            <div class="card_information">
+                <input id="number" placeholder="1234 1234 1234 1234" type="text" required/>
+                <input id="date" placeholder="MM/YY" type="text" required/>
+                <input id="cvc" type="text" placeholder="CVC" minlength="3" maxlength="3" required/>
+            </div>
+        </div>
+        <div class="field">
+            <label htmlFor="cardname">
+                name on card
+            </label>
+            <input id="cardname" placeholder="IVANOV IVAN" type="text" required/>
+        </div>
+    </div>
+</body>
+</html>
